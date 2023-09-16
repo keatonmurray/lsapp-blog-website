@@ -16,5 +16,5 @@
         <p>No posts found</p>
     @endif
     <a href="/posts/create" class="btn btn-success">Create New</a>
-    <a href="/" class="btn btn-danger">Go back</a>
+    <a href="/" class="btn btn-secondary">Go back</a>
 @endsection

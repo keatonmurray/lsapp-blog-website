@@ -21,7 +21,11 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('posts/create');
+        $data = [
+            'post' => 'Post',
+            'cancel' => 'Cancel'
+        ];
+        return view('posts/create')->with($data);
     }
 
     /**

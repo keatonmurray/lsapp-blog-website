@@ -11,7 +11,7 @@ class PagesController extends Controller
         $data = [
             'title' => 'LSAPP',
             'description' => 'Create beautiful blogs, memo, or articles, and share it to the world with LSAPP!',
-            'create' => 'Create Post'
+            'create' => 'Write A Story'
     ];
         return view('pages/index')->with($data);
     }

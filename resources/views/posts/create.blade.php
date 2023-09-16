@@ -13,9 +13,25 @@
         <div class="form-group">
             <label value="body">Body</label>
         </div>
-        <textarea class="form-control" name="body" cols="30" rows="10" placeholder="Body Text"></textarea>
+        <textarea class="form-control" id="summernote" name="body" cols="30" rows="10" placeholder="Body Text"></textarea>
         <br>
-        <button type="submit" class="btn btn-success">Submit</button>
-        <a href="/posts" class="btn btn-danger">Go Back</a>
+        <script>
+            $('#summernote').summernote({
+              placeholder: 'Body Text',
+              tabsize: 2,
+              height: 250,
+              toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+              ]
+            });
+          </script>
+        <button type="submit" class="btn btn-success">{{$post}}</button>
+        <a href="/posts" class="btn btn-secondary">{{$cancel}}</a>
     </form>
 @endsection

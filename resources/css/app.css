@@ -2,6 +2,11 @@
     font-family: 'Poppins';
 }
 
+.container-fluid .navbar-brand {
+    margin-left: 50%;
+    font-size: 22px;
+}
+
 button a {
     text-decoration: none;
     color: white;
