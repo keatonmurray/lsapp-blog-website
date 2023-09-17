@@ -33,6 +33,6 @@
             });
           </script>
         <button type="submit" class="btn btn-success">Update</button>
-        <a href="/posts" class="btn btn-secondary">Cancel Edit</a>
+        <a href="/posts" class="btn btn-danger">Cancel Edit</a>
     </form>
 @endsection

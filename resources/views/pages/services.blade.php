@@ -1,7 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
-    <br><br>
+    <br>
     <h1>{{$title}}</h1>
     <br>
     @if (count($services) > 0)
