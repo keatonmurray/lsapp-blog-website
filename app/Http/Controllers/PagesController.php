@@ -19,8 +19,8 @@ class PagesController extends Controller
     public function about() {
 
         $data = [
-            'title' => 'About Us',
-            'description' => 'This is the about page'
+            'title' => 'About LSAPP',
+            'description' => 'LSAPP is a writing tool where you can write content, and share it with everyone. Your posts will be visible in the main Blog section for all the other users to see'
     ];
         return view('pages/about')->with($data);
     }
