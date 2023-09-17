@@ -27,11 +27,11 @@
 </head>
 <body class="antialiased">
     @include('inc/navbar')
-    <main role="main" class="container">
+    <div class="container">
         <br>
         @include('inc/messages')
         @yield('content')
-    </main>
+    </div>
     <br>
 </body>
 </html>

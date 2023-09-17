@@ -9,9 +9,9 @@ class PagesController extends Controller
     public function index() {
 
         $data = [
-            'title' => 'LSAPP',
-            'description' => 'Create beautiful blogs, memo, or articles, and share it to the world with LSAPP!',
-            'create' => 'Write A Story'
+            'title' => 'Welcome to LSAPP!',
+            'description' => 'Create beautiful blogs, memos, and news articles with our user-friendly text editor, and share it to the world',
+            'button' => 'Learn More'
     ];
         return view('pages/index')->with($data);
     }
@@ -29,7 +29,7 @@ class PagesController extends Controller
 
         $data = [
             'title' => 'Our Services',
-            'services' => ['Proofreading', 'Content Writing', 'SEO']
+            'services' => ['Copywriting', 'Proofreading', 'Web Content Development', 'SEO']
     ];
         return view('pages/services')->with($data);
     }
