@@ -18,19 +18,23 @@
                                 <th>Post Title</th>
                                 <th>Action</th>
                             </tr>
-                            @foreach($posts as $post)
-                                <tr>
-                                    <td>{{$post->title}}</td>
-                                    <td>
-                                        <form action="{{action('App\Http\Controllers\PostsController@destroy', $post->id)}}" method="POST">
-                                            {{ csrf_field() }}
-                                            {{ method_field('DELETE') }}
-                                            <a href="/posts/{{$post->id}}/edit" class="btn btn-secondary">Edit</a>
-                                            <button class="btn btn-danger" type="submit">Delete</button>
-                                        </form>
-                                    </td>
-                                </tr>
-                            @endforeach
+                            @if(count($posts)  > 0)
+                                @foreach($posts as $post)
+                                    <tr>
+                                        <td>{{$post->title}}</td>
+                                        <td>
+                                            <form action="{{action('App\Http\Controllers\PostsController@destroy', $post->id)}}" method="POST">
+                                                {{ csrf_field() }}
+                                                {{ method_field('DELETE') }}
+                                                <a href="/posts/{{$post->id}}/edit" class="btn btn-secondary">Edit</a>
+                                                <button class="btn btn-danger" type="submit">Delete</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                                @else
+                                <p>No posts found</p>
+                            @endif
                         </table>
                     </div>
                 </div>
