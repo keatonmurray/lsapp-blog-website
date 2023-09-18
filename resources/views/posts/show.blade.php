@@ -1,12 +1,15 @@
 @extends('layouts/app')
 
 @section('content')
-    <br>
+    <div class="cancel-btn">
+        <a href="/posts" class="btn btn-primary">Go back</a>
+    </div>
+    <br><br>
     <h2>{{$posts->title}}</h2>
     <div>
         {!!$posts->body!!}
-    </div>
+    </div>   
     <hr>
-    <small>Written on {{$posts->created_at}}</small>
+    <small>Written on {{$posts->created_at}} by {{$posts->user->name}}</small>
     <hr>
 @endsection

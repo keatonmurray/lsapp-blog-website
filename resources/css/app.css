@@ -19,3 +19,7 @@ button a {
 .card ul li {
     cursor: pointer;
 }
+
+.cancel-btn a, .new-post-btn a {
+    float:right;
+}

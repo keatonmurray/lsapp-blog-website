@@ -31,7 +31,7 @@
               ]
             });
           </script>
-        <button type="submit" class="btn btn-success">{{$post}}</button>
-        <a href="/posts" class="btn btn-danger">{{$cancel}}</a>
+        <button type="submit" class="btn btn-primary">{{$post}}</button>
+        <a href="/posts" class="btn btn-secondary">{{$cancel}}</a>
     </form>
 @endsection

@@ -32,7 +32,7 @@
               ]
             });
           </script>
-        <button type="submit" class="btn btn-success">Update</button>
-        <a href="/posts" class="btn btn-danger">Cancel Edit</a>
+        <button type="submit" class="btn btn-primary">Update</button>
+        <a href="/posts" class="btn btn-secondary">Cancel</a>
     </form>
 @endsection
